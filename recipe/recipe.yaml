@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dominodatalab
-  version: 1.4.7
+  version: "2.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dominodatalab-${{ version }}.tar.gz
-  sha256: d016b285eba676147b2e4b0c7cc235b71b5a2009e7421281f7246a6ec619342c
+  sha256: 05d0f44a89bf0562413018f638839e31bdc108d6ed67869d5ccaceacf41ee237
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
